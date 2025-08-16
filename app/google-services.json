@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "958503038046",
+    "project_id": "shopzi741258",
+    "storage_bucket": "shopzi741258.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958503038046:android:18072c9da18c7b8e27d8cf",
+        "android_client_info": {
+          "package_name": "com.example.shopzi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY5P5u-tOnhlJYvOvuTi-sMiPrMaCJsWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958503038046:android:5db3cf11cf87e97d27d8cf",
+        "android_client_info": {
+          "package_name": "com.example.shopziseller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY5P5u-tOnhlJYvOvuTi-sMiPrMaCJsWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
