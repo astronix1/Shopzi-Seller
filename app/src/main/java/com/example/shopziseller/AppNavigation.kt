@@ -6,6 +6,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.shopziseller.screens.AddProduct
+import com.example.shopziseller.screens.OrdersPage
+import com.example.shopziseller.screens.UpdateProduct
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 
@@ -23,6 +26,16 @@ fun AppNavigation(modifier: Modifier = Modifier) {
 
         composable("homescreen") {
             HomeScreen(modifier)
+        }
+
+        composable("orders"){
+            OrdersPage(modifier)
+        }
+        composable("update"){
+            UpdateProduct(modifier)
+        }
+        composable("addproduct"){
+            AddProduct(modifier)
         }
     }
 }

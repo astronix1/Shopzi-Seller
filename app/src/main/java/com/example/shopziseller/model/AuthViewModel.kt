@@ -1,4 +1,4 @@
-package com.example.shopziseller
+package com.example.shopziseller.model
 
 import androidx.lifecycle.ViewModel
 import com.google.firebase.Firebase

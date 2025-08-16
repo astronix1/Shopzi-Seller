@@ -26,6 +26,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.shopziseller.model.AuthViewModel
 
 @Composable
 fun LoginPage(modifier: Modifier = Modifier, authViewModel: AuthViewModel = androidx.lifecycle.viewmodel.compose.viewModel()) {
@@ -44,7 +45,7 @@ fun LoginPage(modifier: Modifier = Modifier, authViewModel: AuthViewModel = andr
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Great to see you again!",
+            text = "Admin Dashboard Login",
             modifier.fillMaxWidth(),
             style = TextStyle(
                 color = Color.Black,
@@ -91,6 +92,7 @@ fun LoginPage(modifier: Modifier = Modifier, authViewModel: AuthViewModel = andr
                         if (success) {
                             GlobalNavigation.navController.navigate("homescreen") {
                                 popUpTo("login") { inclusive = true }
+                                launchSingleTop = true
                             }
                         } else {
                             AppUtil.showToast(context, errorMsg ?: "Something went wrong")
